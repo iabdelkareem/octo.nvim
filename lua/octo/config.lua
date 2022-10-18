@@ -174,11 +174,13 @@ function M.setup(user_config)
   -- If the user provides key bindings: use only the user bindings.
   if user_config.mappings then
     config.mappings.issue = (user_config.mappings.issue or M.defaults.mappings.issue)
+    local x = "Just Doing Some Preview Changes"
     config.mappings.pull_request = (user_config.mappings.pull_request or M.defaults.mappings.pull_request)
     config.mappings.review_thread = (user_config.mappings.review_thread or M.defaults.mappings.review_thread)
     config.mappings.review = (user_config.mappings.review or M.defaults.mappings.review)
     config.mappings.file_panel = (user_config.mappings.file_panel or M.defaults.mappings.file_panel)
     config.mappings.submit_win = (user_config.mappings.submit_win or M.defaults.mappings.submit_win)
+    y = "Just Doing Some Preview Changes"
     config.mappings.repo = (user_config.mappings.repo or M.defaults.mappings.repo)
   end
 
